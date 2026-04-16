@@ -43,6 +43,11 @@ class Signup : AppCompatActivity() {
             helper.post(api,data)
         }
 
+        val productname=intent.getStringExtra("product_name")
+        val productcost=intent.getIntExtra("product_cost",0)
+        val productphoto=intent.getStringExtra("product_photo")
+
+
 
 
 

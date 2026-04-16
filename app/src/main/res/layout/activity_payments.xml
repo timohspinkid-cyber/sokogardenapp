@@ -1,10 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/payment"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Payments">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#DBD1D1"
+    android:elevation="15dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_photo"
+            android:layout_marginTop="20dp"
+            android:layout_margin="30dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_marginStart="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="#002ED4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:drawablePadding="10dp"
+            />
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_marginStart="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product description"
+            android:textColor="#000"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/product_cost"
+            android:layout_marginStart="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KSh 0"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#00C817"/>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone 254XXXXXXXXX"
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:background="@drawable/edittext"
+            android:padding="15dp"
+            android:layout_marginBottom="16dp"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="PAY NOW"
+            android:backgroundTint="#2736A6"
+            android:id="@+id/pay"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

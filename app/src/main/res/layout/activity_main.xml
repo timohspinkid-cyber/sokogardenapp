@@ -13,11 +13,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SokoGarden"
+        android:text="COPECART LAPS"
         android:textSize="30sp"
         android:layout_marginTop="30sp"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="#EA00FF"
         android:background="@drawable/shape"
         android:layout_margin="20sp"
         android:padding="10dp"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/signup"
         android:text="Sign up"
-        android:backgroundTint="#b6db13"
+        android:backgroundTint="#002FFF"
         android:layout_margin="20dp"
         android:textSize="20sp"
         android:padding="10dp"
@@ -37,10 +37,20 @@
         android:layout_height="wrap_content"
         android:text="Sign in"
         android:id="@+id/login"
-        android:backgroundTint="#aadb19"
+        android:backgroundTint="#0037FF"
         android:layout_margin="20sp"
         android:textSize="20sp"
         android:padding="10dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"
+        tools:listitem="@layout/singleitem"/>
 
 
 </LinearLayout>
