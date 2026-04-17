@@ -39,6 +39,13 @@ class MainActivity : AppCompatActivity() {
         val api="http://timothy.alwaysdata.net/api/getproductdetails"
         val helper= ApiHelper(applicationContext)
         helper.loadProducts(api,recyclerView,progress)
+
+
+        val aboutus= findViewById<Button>(R.id.about)
+        aboutus.setOnClickListener {
+            val intent = Intent(applicationContext, About::class.java)
+            startActivity(intent)
+        }
     }
 
 }

@@ -17,30 +17,49 @@
         android:textSize="30sp"
         android:layout_marginTop="30sp"
         android:textAlignment="center"
-        android:textColor="#EA00FF"
+        android:textColor="#7A0714"
         android:background="@drawable/shape"
         android:layout_margin="20sp"
         android:padding="10dp"
        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signup"
-        android:text="Sign up"
-        android:backgroundTint="#002FFF"
-        android:layout_margin="20dp"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:fontFamily="sans-serif-condensed-light"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sign in"
-        android:id="@+id/login"
-        android:backgroundTint="#0037FF"
-        android:layout_margin="20sp"
-        android:textSize="20sp"
-        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="101dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#002FFF"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Sign up"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:backgroundTint="#0037FF"
+            android:padding="10dp"
+            android:text="Sign in"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:backgroundTint="#0037FF"
+            android:padding="10dp"
+            android:text="About Info"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 
     <ProgressBar
         android:layout_width="match_parent"
